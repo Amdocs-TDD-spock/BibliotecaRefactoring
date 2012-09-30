@@ -1,6 +1,7 @@
 package main;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Program {
@@ -11,15 +12,7 @@ public class Program {
         while (true) {
             displayStartMenu();
 
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            int userChoice = 0;
-            try {
-                String value = reader.readLine();
-                userChoice = Integer.parseInt(value);
-            } catch (Exception e) {
-                // Do you know what numbers are!!!
-                System.out.println("Enter a valid integer!!");
-            }
+            int userChoice=getUserInput();
 
             if (userChoice == 1) {
                 System.out.println(" 1. Sweet Valley High vol. 4 by John Travolta ");
@@ -30,7 +23,7 @@ public class Program {
                 System.out.println(" Please enter the number of the book you wish to checkout: ");
                 int i2 = 0;
                 try {
-                    i2 = Integer.parseInt(reader.readLine());
+                    i2 = getUserInput();
                 } catch (Exception e) {
                     // Do you know what numbers are!!!
                     System.out.println("Enter a valid integer!!");
@@ -81,11 +74,11 @@ public class Program {
                 clearLogin();
                 System.out.println("Enter your library number");
                 try {
-                    String libraryNumber = reader.readLine();
+                    String libraryNumber = getStringInput();
                     if (validLibraryNumber(libraryNumber)) {
                         try {
                             System.out.println("Enter your Password: ");
-                            String password = reader.readLine();
+                            String password = getStringInput();
                             if (validPassword(password)) {
                                 loggedIn = true;
                                 savedLibraryNumber = libraryNumber;
@@ -106,6 +99,24 @@ public class Program {
                 System.out.println("Enter a valid integer!!");
             }
         }
+    }
+
+    private static String getStringInput() throws IOException{
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String userChoice = reader.readLine();
+        return userChoice;
+
+    }
+
+    private static int getUserInput() {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            int userChoice = Integer.parseInt(reader.readLine());
+            return userChoice;
+        } catch (Exception e) {
+
+        }
+        return 0;
     }
 
     public static void displayStartMenu() {
