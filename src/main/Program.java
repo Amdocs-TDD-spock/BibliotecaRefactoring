@@ -25,27 +25,10 @@ public class Program {
                      System.out.println("Enter a valid integer!!");
 
                 }
-                switch (bookChoice) {
-                    case 1:
-                        System.out.println("\n");
-                        System.out.println(" Thank You! Enjoy the book.");
-                        break;
-                    case 2:
-                        System.out.println("\n");
-                        System.out.println(" Thank You! Enjoy the book.");
-                        break;
-                    case 3:
-                        System.out.println("\n");
-                        System.out.println(" Thank You! Enjoy the book.");
-                        break;
-                    case 4:
-                        System.out.println("\n");
-                        System.out.println(" Thank You! Enjoy the book.");
-                        break;
-                    default:
-                        System.out.println("\n");
-                        System.out.println("Sorry we don't have that book yet.");
-                }
+                if(bookChoice>0 && bookChoice<=4)
+                    displaySuccessfulResrvationMsg();
+                else
+                    displayUnsuccessfulReservationMsg();
             } else if (userChoice == 3) {
                 if (loggedIn()) {
                     System.out.println("\n");
@@ -86,6 +69,16 @@ public class Program {
                 System.out.println("Enter a valid integer!!");
             }
         }
+    }
+
+    private static void displayUnsuccessfulReservationMsg() {
+        System.out.println("\n");
+        System.out.println("Sorry we don't have that book yet.");
+    }
+
+    public static void displaySuccessfulResrvationMsg() {
+        System.out.println("\n");
+        System.out.println(" Thank You! Enjoy the book.");
     }
 
     public static void displayBookList() {
