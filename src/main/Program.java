@@ -13,21 +13,21 @@ public class Program {
 
             InputStreamReader inputStream = new InputStreamReader(System.in);
             BufferedReader reader = new BufferedReader(inputStream);
-            int i1 = 0;
+            int userChoice = 0;
             try {
                 String value = reader.readLine();
-                i1 = Integer.parseInt(value);
+                userChoice = Integer.parseInt(value);
             } catch (Exception e) {
                 // Do you know what numbers are!!!
                 System.out.println("Enter a valid integer!!");
             }
 
-            if (i1 == 1) {
+            if (userChoice == 1) {
                 System.out.println(" 1. Sweet Valley High vol. 4 by John Travolta ");
                 System.out.println(" 2. eXtreme Programming Explained by Kent Beck ");
                 System.out.println(" 3. How to Win Friends and Influence People by Dale Carnagie ");
                 System.out.println(" 4. How to Cheat at TWU Assignements by Anonymous ");
-            } else if (i1 == 2) {
+            } else if (userChoice == 2) {
                 System.out.println(" Please enter the number of the book you wish to checkout: ");
                 int i2 = 0;
                 try {
@@ -58,7 +58,7 @@ public class Program {
                         System.out.println("\n");
                         System.out.println("Sorry we don't have that book yet.");
                 }
-            } else if (i1 == 3) {
+            } else if (userChoice == 3) {
                 if (loggedIn()) {
                     System.out.println("\n");
                     System.out.println("Your library number is " + savedLibraryNumber);
@@ -67,7 +67,7 @@ public class Program {
                     System.out.println("\n");
                     System.out.println("Please talk to Librarian. Thank you.");
                 }
-            } else if (i1 == 4) {
+            } else if (userChoice == 4) {
                 System.out.println(createMovie("Rocky", "John G. Avildsen", "10"));
                 System.out.println(createMovie("Rocky II", "John G. Avildsen", "9"));
                 System.out.println(createMovie("Rocky III", "John G. Avildsen", "8"));
@@ -78,7 +78,7 @@ public class Program {
                 System.out.println(createMovie("The Godfather", "Francis Ford Coppola", "7"));
                 System.out.println(createMovie("Inception", "Frank Darabont", "10"));
                 System.out.println(createMovie("Pulp Fiction", "Quentin Tarantino", "6"));
-            } else if (i1 == 5) {
+            } else if (userChoice == 5) {
                 clearLogin();
                 System.out.println("Enter your library number");
                 try {
@@ -99,7 +99,7 @@ public class Program {
 
                 }
 
-            } else if (i1 == 9) {
+            } else if (userChoice == 9) {
                 System.out.println("Quitting...");
                 break;
             } else {
