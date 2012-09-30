@@ -16,20 +16,11 @@ public class Program {
 
             if (userChoice == 1) {
                 displayBookList();
-            } else if (userChoice == 2) {
-                System.out.println(" Please enter the number of the book you wish to checkout: ");
-                int bookChoice = 0;
-                try {
-                    bookChoice = getUserInput();
-                } catch (Exception e) {
-                     System.out.println("Enter a valid integer!!");
-
-                }
-                if(bookChoice>0 && bookChoice<=4)
-                    displaySuccessfulResrvationMsg();
-                else
-                    displayUnsuccessfulReservationMsg();
-            } else if (userChoice == 3) {
+            }
+            else if (userChoice == 2) {
+                reserveBook();
+            }
+            else if (userChoice == 3) {
                 if (loggedIn()) {
                     System.out.println("\n");
                     System.out.println("Your library number is " + savedLibraryNumber);
@@ -69,6 +60,21 @@ public class Program {
                 System.out.println("Enter a valid integer!!");
             }
         }
+    }
+
+    public static void reserveBook() {
+        System.out.println(" Please enter the number of the book you wish to checkout: ");
+        int bookChoice = 0;
+        try {
+            bookChoice = getUserInput();
+        } catch (Exception e) {
+             System.out.println("Enter a valid integer!!");
+
+        }
+        if(bookChoice>0 && bookChoice<=4)
+            displaySuccessfulResrvationMsg();
+        else
+            displayUnsuccessfulReservationMsg();
     }
 
     private static void displayUnsuccessfulReservationMsg() {
