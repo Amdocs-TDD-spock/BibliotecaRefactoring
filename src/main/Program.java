@@ -11,8 +11,7 @@ public class Program {
         while (true) {
             displayStartMenu();
 
-            InputStreamReader inputStream = new InputStreamReader(System.in);
-            BufferedReader reader = new BufferedReader(inputStream);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             int userChoice = 0;
             try {
                 String value = reader.readLine();
