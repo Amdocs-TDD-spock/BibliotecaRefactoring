@@ -66,7 +66,7 @@
       <file leaf-file-name="Program.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+            <state line="36" column="4" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,7 +77,7 @@
       <file leaf-file-name="Menu.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="17" selection-start="858" selection-end="858" vertical-scroll-proportion="0.6520548">
+            <state line="12" column="12" selection-start="283" selection-end="283" vertical-scroll-proportion="0.5589041">
               <folding />
             </state>
           </provider>
@@ -86,7 +86,7 @@
       <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="18" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+            <state line="17" column="12" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -276,10 +276,10 @@
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="main.User" />
+      <recent name="main.Program" />
       <recent name="main.Menu" />
       <recent name="main.Movie" />
       <recent name="Movie" />
-      <recent name="Movie.java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="main.User.Menu" />
@@ -630,15 +630,6 @@
         <state line="12" column="13" selection-start="302" selection-end="302" vertical-scroll-proportion="0.04956268" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -646,16 +637,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="4" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+        <state line="17" column="12" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="17" selection-start="858" selection-end="858" vertical-scroll-proportion="0.6520548">
+        <state line="12" column="12" selection-start="283" selection-end="283" vertical-scroll-proportion="0.5589041">
           <folding />
         </state>
       </provider>
