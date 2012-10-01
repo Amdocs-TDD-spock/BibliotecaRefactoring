@@ -12,7 +12,7 @@ public class Menu {
             Program.reserveBook();
         }
         else if (userChoice == 3) {
-            if (loggedIn()) {
+            if (User.loggedIn()) {
                 System.out.println("\n");
                 System.out.println("Your library number is " + Program.savedLibraryNumber);
             } else {
@@ -57,10 +57,6 @@ public class Menu {
         } catch (Exception e) {
 
         }
-    }
-
-    public static boolean loggedIn() {
-        return Program.loggedIn;
     }
 
     public static void clearLogin() {
