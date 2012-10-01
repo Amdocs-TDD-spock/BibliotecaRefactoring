@@ -2,8 +2,7 @@ package main;
 
 public class Menu {
 
-    private static boolean loggedIn = false;
-    private static String savedLibraryNumber = "";
+
 
     public boolean chooseOptionFromMenu() {
         int userChoice= Program.getUserInput();
@@ -17,7 +16,7 @@ public class Menu {
         else if (userChoice == 3) {
             if (loggedIn()) {
                 System.out.println("\n");
-                System.out.println("Your library number is " + savedLibraryNumber);
+                System.out.println("Your library number is " + Program.savedLibraryNumber);
             } else {
 
                 System.out.println("\n");
@@ -37,8 +36,8 @@ public class Menu {
                         System.out.println("Enter your Password: ");
                         String password = Program.getStringInput();
                         if (Program.validPassword(password)) {
-                            loggedIn = true;
-                            savedLibraryNumber = libraryNumber;
+                            Program.loggedIn = true;
+                            Program.savedLibraryNumber = libraryNumber;
                         }
                     } catch (Exception e) {
 
@@ -59,12 +58,12 @@ public class Menu {
     }
 
     public static boolean loggedIn() {
-        return loggedIn;
+        return Program.loggedIn;
     }
 
     public static void clearLogin() {
-        loggedIn = false;
-        savedLibraryNumber = "";
+        Program.loggedIn = false;
+        Program.savedLibraryNumber = "";
     }
 
     public static void displayStartMenu() {

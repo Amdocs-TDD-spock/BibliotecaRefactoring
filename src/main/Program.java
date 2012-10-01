@@ -7,6 +7,8 @@ import java.io.InputStreamReader;
 public class Program {
 
     private static Menu menu;
+    public static boolean loggedIn = false;
+    public static String savedLibraryNumber = "";
 
     public static void main(String[] args) {
         menu=new Menu();
