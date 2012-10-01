@@ -66,7 +66,7 @@
       <file leaf-file-name="Program.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="4" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0">
+            <state line="62" column="5" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,19 +74,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Menu.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="12" selection-start="283" selection-end="283" vertical-scroll-proportion="0.5589041">
+            <state line="48" column="30" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="User.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="12" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+            <state line="57" column="21" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.9068493">
               <folding />
             </state>
           </provider>
@@ -117,9 +117,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/User/java.java" />
         <option value="$PROJECT_DIR$/src/main/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/Program.java" />
         <option value="$PROJECT_DIR$/src/main/User.java" />
-        <option value="$PROJECT_DIR$/src/main/Menu.java" />
       </list>
     </option>
   </component>
@@ -639,23 +639,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0">
+        <state line="62" column="5" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+        <state line="48" column="30" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="283" selection-end="283" vertical-scroll-proportion="0.5589041">
+        <state line="57" column="21" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.9068493">
           <folding />
         </state>
       </provider>

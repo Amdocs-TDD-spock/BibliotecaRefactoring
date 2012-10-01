@@ -61,10 +61,6 @@ public class Program {
         return "bhaisahab".equals(password);
     }
 
-    public static boolean validLibraryNumber(String libraryNumber) {
-        return libraryNumber.matches("\\d\\d\\d-\\d\\d\\d\\d");
-    }
-
 
     public static void clearLogin() {
         loggedIn = false;

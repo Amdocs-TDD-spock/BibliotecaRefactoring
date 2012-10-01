@@ -39,7 +39,7 @@ public class Menu {
         return false;
     }
 
-    public static void displayStartMenu() {
+    public void displayStartMenu() {
         System.out.println("**********************************************************");
         System.out.println("* Welcome to The Bangalore Public Library System - Biblioteca *");
         System.out.println("**********************************************************");

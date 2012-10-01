@@ -5,6 +5,10 @@ public class User {
         return Program.loggedIn;
     }
 
+    public boolean validLibraryNumber(String libraryNumber) {
+        return libraryNumber.matches("\\d\\d\\d-\\d\\d\\d\\d");
+    }
+
     public void reserveBook() {
         System.out.println(" Please enter the number of the book you wish to checkout: ");
         int bookChoice = 0;
@@ -34,7 +38,7 @@ public class User {
         System.out.println("Enter your library number");
         try {
             String libraryNumber = Program.getStringInput();
-            if (Program.validLibraryNumber(libraryNumber)) {
+            if (validLibraryNumber(libraryNumber)) {
                 try {
                     System.out.println("Enter your Password: ");
                     String password = Program.getStringInput();
