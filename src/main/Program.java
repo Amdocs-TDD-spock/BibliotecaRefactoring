@@ -5,62 +5,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Program {
-    private static boolean loggedIn = false;
-    private static String savedLibraryNumber = "";
 
     public static void main(String[] args) {
         while (true) {
             displayStartMenu();
 
-            int userChoice=getUserInput();
-
-            if (userChoice == 1) {
-                displayBookList();
-            }
-            else if (userChoice == 2) {
-                reserveBook();
-            }
-            else if (userChoice == 3) {
-                if (loggedIn()) {
-                    System.out.println("\n");
-                    System.out.println("Your library number is " + savedLibraryNumber);
-                } else {
-
-                    System.out.println("\n");
-                    System.out.println("Please talk to Librarian. Thank you.");
-                }
-            }
-            else if (userChoice == 4) {
-                displayMovieList();
-            }
-            else if (userChoice == 5) {
-                clearLogin();
-                System.out.println("Enter your library number");
-                try {
-                    String libraryNumber = getStringInput();
-                    if (validLibraryNumber(libraryNumber)) {
-                        try {
-                            System.out.println("Enter your Password: ");
-                            String password = getStringInput();
-                            if (validPassword(password)) {
-                                loggedIn = true;
-                                savedLibraryNumber = libraryNumber;
-                            }
-                        } catch (Exception e) {
-
-                        }
-                    }
-                } catch (Exception e) {
-
-                }
-
-            } else if (userChoice == 9) {
-                System.out.println("Quitting...");
-                break;
-            } else {
-                System.out.println("\n");
-                System.out.println("Enter a valid integer!!");
-            }
+            if (Menu.chooseOptionFromMenu()) break;
         }
     }
 
@@ -109,14 +59,14 @@ public class Program {
         System.out.println(new Movie("Pulp Fiction", "Quentin Tarantino", "6"));
     }
 
-    private static String getStringInput() throws IOException{
+    public static String getStringInput() throws IOException{
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String userChoice = reader.readLine();
         return userChoice;
 
     }
 
-    private static int getUserInput() {
+    public static int getUserInput() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
             int userChoice = Integer.parseInt(reader.readLine());
@@ -143,20 +93,20 @@ public class Program {
         System.out.println("Your Selection: ");
     }
 
-    private static boolean validPassword(String password) {
+    public static boolean validPassword(String password) {
         return "bhaisahab".equals(password);
     }
 
-    private static boolean validLibraryNumber(String libraryNumber) {
+    public static boolean validLibraryNumber(String libraryNumber) {
         return libraryNumber.matches("\\d\\d\\d-\\d\\d\\d\\d");
     }
 
-    private static boolean loggedIn() {
+    public static boolean loggedIn() {
         return loggedIn;
     }
 
 
-    private static void clearLogin() {
+    public static void clearLogin() {
         loggedIn = false;
         savedLibraryNumber = "";
     }
