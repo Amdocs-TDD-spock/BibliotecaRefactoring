@@ -6,11 +6,14 @@ import java.io.InputStreamReader;
 
 public class Program {
 
-    public static void main(String[] args) {
-        while (true) {
-            Menu.displayStartMenu();
+    private static Menu menu;
 
-            if (Menu.chooseOptionFromMenu()) break;
+    public static void main(String[] args) {
+        menu=new Menu();
+        while (true) {
+            menu.displayStartMenu();
+
+            if (menu.chooseOptionFromMenu()) break;
         }
     }
 
