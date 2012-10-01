@@ -15,7 +15,7 @@ public class Menu {
             Program.reserveBook();
         }
         else if (userChoice == 3) {
-            if (Program.loggedIn()) {
+            if (loggedIn()) {
                 System.out.println("\n");
                 System.out.println("Your library number is " + savedLibraryNumber);
             } else {
@@ -28,7 +28,7 @@ public class Menu {
             Program.displayMovieList();
         }
         else if (userChoice == 5) {
-            Program.clearLogin();
+            clearLogin();
             System.out.println("Enter your library number");
             try {
                 String libraryNumber = Program.getStringInput();
@@ -56,5 +56,14 @@ public class Menu {
             System.out.println("Enter a valid integer!!");
         }
         return false;
+    }
+
+    public static boolean loggedIn() {
+        return loggedIn;
+    }
+
+    public static void clearLogin() {
+        loggedIn = false;
+        savedLibraryNumber = "";
     }
 }

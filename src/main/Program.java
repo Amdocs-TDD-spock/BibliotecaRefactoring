@@ -101,15 +101,6 @@ public class Program {
         return libraryNumber.matches("\\d\\d\\d-\\d\\d\\d\\d");
     }
 
-    public static boolean loggedIn() {
-        return loggedIn;
-    }
-
-
-    public static void clearLogin() {
-        loggedIn = false;
-        savedLibraryNumber = "";
-    }
 
 }
 
