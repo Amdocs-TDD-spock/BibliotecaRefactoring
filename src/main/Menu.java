@@ -2,6 +2,7 @@ package main;
 
 public class Menu {
 
+    User user=new User();
     public boolean chooseOptionFromMenu() {
         int userChoice= Program.getUserInput();
 
@@ -9,7 +10,7 @@ public class Menu {
             Program.displayBookList();
         }
         else if (userChoice == 2) {
-            Program.reserveBook();
+            user.reserveBook();
         }
         else if (userChoice == 3) {
             if (User.loggedIn()) {
@@ -25,8 +26,7 @@ public class Menu {
             Program.displayMovieList();
         }
         else if (userChoice == 5) {
-            clearLogin();
-            User user=new User();
+            Program.clearLogin();
             user.login();
 
         } else if (userChoice == 9) {
@@ -37,11 +37,6 @@ public class Menu {
             System.out.println("Enter a valid integer!!");
         }
         return false;
-    }
-
-    public static void clearLogin() {
-        Program.loggedIn = false;
-        Program.savedLibraryNumber = "";
     }
 
     public static void displayStartMenu() {

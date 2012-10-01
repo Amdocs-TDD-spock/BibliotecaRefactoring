@@ -19,31 +19,6 @@ public class Program {
         }
     }
 
-    public static void reserveBook() {
-        System.out.println(" Please enter the number of the book you wish to checkout: ");
-        int bookChoice = 0;
-        try {
-            bookChoice = getUserInput();
-        } catch (Exception e) {
-             System.out.println("Enter a valid integer!!");
-
-        }
-        if(bookChoice>0 && bookChoice<=4)
-            displaySuccessfulResrvationMsg();
-        else
-            displayUnsuccessfulReservationMsg();
-    }
-
-    private static void displayUnsuccessfulReservationMsg() {
-        System.out.println("\n");
-        System.out.println("Sorry we don't have that book yet.");
-    }
-
-    public static void displaySuccessfulResrvationMsg() {
-        System.out.println("\n");
-        System.out.println(" Thank You! Enjoy the book.");
-    }
-
     public static void displayBookList() {
         System.out.println(" 1. Sweet Valley High vol. 4 by John Travolta ");
         System.out.println(" 2. eXtreme Programming Explained by Kent Beck ");
@@ -91,5 +66,9 @@ public class Program {
     }
 
 
+    public static void clearLogin() {
+        loggedIn = false;
+        savedLibraryNumber = "";
+    }
 }
 

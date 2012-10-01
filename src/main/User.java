@@ -5,6 +5,31 @@ public class User {
         return Program.loggedIn;
     }
 
+    public void reserveBook() {
+        System.out.println(" Please enter the number of the book you wish to checkout: ");
+        int bookChoice = 0;
+        try {
+            bookChoice = Program.getUserInput();
+        } catch (Exception e) {
+             System.out.println("Enter a valid integer!!");
+
+        }
+        if(bookChoice>0 && bookChoice<=4)
+            displaySuccessfulResrvationMsg();
+        else
+            displayUnsuccessfulReservationMsg();
+    }
+
+    public void displayUnsuccessfulReservationMsg() {
+        System.out.println("\n");
+        System.out.println("Sorry we don't have that book yet.");
+    }
+
+    public void displaySuccessfulResrvationMsg() {
+        System.out.println("\n");
+        System.out.println(" Thank You! Enjoy the book.");
+    }
+
     public void login() {
         System.out.println("Enter your library number");
         try {
